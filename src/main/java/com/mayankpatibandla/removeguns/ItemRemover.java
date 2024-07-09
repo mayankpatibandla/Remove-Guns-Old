@@ -3,6 +3,7 @@ package com.mayankpatibandla.removeguns;
 import com.mayankpatibandla.removeguns.config.ConfigurationHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
@@ -32,6 +33,26 @@ public class ItemRemover {
                     }
                 }
 
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public void removeFromWorld(TickEvent.WorldTickEvent event) {
+        // Remove guns from the world
+        Property items_list = ConfigurationHandler.getItems();
+
+        for (Object x : event.world.loadedEntityList) {
+            if (x instanceof EntityItem) {
+                EntityItem item = (EntityItem) x;
+
+                for (String item_name : items_list.getStringList()) {
+                    if (item.getEntityItem().getDisplayName().equals(item_name)) {
+                        event.world.removeEntity(item);
+
+                        System.out.println("Removed " + item.getEntityItem().getDisplayName() + " from the world");
+                    }
+                }
             }
         }
     }

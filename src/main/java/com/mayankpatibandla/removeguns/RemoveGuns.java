@@ -25,7 +25,7 @@ public class RemoveGuns {
         System.out.println("Pre-Initialization for Remove Guns");
 
         ConfigurationHandler.init(event.getModConfigurationDirectory().toString());
-        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
         FMLCommonHandler.instance().bus().register(new ItemRemover());
     }
 

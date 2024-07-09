@@ -87,11 +87,4 @@ public class ConfigurationHandler {
     public static Property getItems() {
         return items;
     }
-
-    @SubscribeEvent
-    public void onConfigurationChangedEvent(ConfigChangedEvent event) {
-        if (event.modID.equalsIgnoreCase("removeguns")) {
-            saveConfiguration();
-        }
-    }
 }
