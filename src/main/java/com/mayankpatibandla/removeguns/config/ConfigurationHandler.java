@@ -9,7 +9,7 @@ import java.io.File;
 public class ConfigurationHandler {
     private static Configuration configuration;
 
-//    public static boolean updateCheck = true;
+    //    public static boolean updateCheck = true;
 
     public static void init(String configDir) {
         if (configuration == null) {
@@ -19,11 +19,16 @@ public class ConfigurationHandler {
     }
 
     private static void loadConfiguration() {
-//        updateCheck = configuration.getBoolean("updateCheck", net.minecraftforge.common.config.Configuration.CATEGORY_GENERAL, true, "Enable update checker");
+        //        updateCheck = configuration.getBoolean("updateCheck", net.minecraftforge.common.config
+        //        .Configuration.CATEGORY_GENERAL, true, "Enable update checker");
 
         if (configuration.hasChanged()) {
             configuration.save();
         }
+    }
+
+    public static Configuration getConfig() {
+        return configuration;
     }
 
     @SubscribeEvent
@@ -31,9 +36,5 @@ public class ConfigurationHandler {
         if (event.modID.equalsIgnoreCase("removeguns")) {
             loadConfiguration();
         }
-    }
-
-    public static Configuration getConfig() {
-        return configuration;
     }
 }

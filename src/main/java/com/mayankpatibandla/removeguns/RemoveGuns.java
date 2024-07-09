@@ -9,6 +9,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
+
 @Mod(modid = "removeguns", name = "Remove Guns", version = "1.0.0", dependencies = "required-after:customnpcs",
      canBeDeactivated = false, acceptedMinecraftVersions = "[1.7.10]", useMetadata = true)
 public class RemoveGuns {
@@ -25,6 +26,7 @@ public class RemoveGuns {
 
         ConfigurationHandler.init(event.getModConfigurationDirectory().toString());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        FMLCommonHandler.instance().bus().register(new ItemRemover());
     }
 
     @Mod.EventHandler
@@ -35,5 +37,6 @@ public class RemoveGuns {
     @Mod.EventHandler
     public static void postInit(FMLPostInitializationEvent event) {
         System.out.println("Post-Initialization for Remove Guns");
+        System.out.println("\u001B[32mTesting if the event handler works1\u001B[0m");
     }
 }
