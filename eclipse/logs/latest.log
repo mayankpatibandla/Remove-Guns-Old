@@ -1,11 +1,7 @@
-[21:38:46] [main/INFO]: Setting user: Player850
-[21:38:47] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:38:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge
-[21:38:52] [Sound Library Loader/INFO]: Sound engine started
-[21:38:52] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[21:38:52] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[21:38:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge
-[21:38:52] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:38:52] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:38:53] [Sound Library Loader/INFO]: Sound engine started
-[21:39:02] [Client thread/INFO]: Stopping!
+[18:45:56] [main/INFO]: Setting user: Player201
+[18:45:57] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:46:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Remove Guns
+[18:46:01] [Sound Library Loader/INFO]: Sound engine started
+[18:46:02] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:46:02] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:46:08] [Client thread/INFO]: Stopping!

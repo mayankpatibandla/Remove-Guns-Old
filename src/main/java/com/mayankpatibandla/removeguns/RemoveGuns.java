@@ -37,6 +37,6 @@ public class RemoveGuns {
     @Mod.EventHandler
     public static void postInit(FMLPostInitializationEvent event) {
         System.out.println("Post-Initialization for Remove Guns");
-        System.out.println("\u001B[32mTesting if the event handler works1\u001B[0m");
+        System.out.println("\u001B[32mTesting if the event handler works20000000\u001B[0m");
     }
 }
