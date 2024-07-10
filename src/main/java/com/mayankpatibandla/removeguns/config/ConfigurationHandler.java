@@ -1,7 +1,5 @@
 package com.mayankpatibandla.removeguns.config;
 
-import cpw.mods.fml.client.event.ConfigChangedEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
 
@@ -11,28 +9,6 @@ import java.util.Arrays;
 public class ConfigurationHandler {
     private static Configuration configuration;
     private static Property items;
-    //        Wooden Gun
-    //        Wooden Bullet
-    //        Stone Gun
-    //        Stone Bullet
-    //        Iron Gun
-    //        Iron Bullet
-    //        Golden Gun
-    //        Golden Bullet
-    //        Diamond Gun
-    //        Diamond Bullet
-    //        Bronze Gun
-    //        Bronze Bullet
-    //        Emerald Gun
-    //        Emerald Bullet
-    //        Machine Gun
-    //        Black Bullet
-    //        Kunai
-    //        Reverse Kunai
-    //        Shuriken
-    //        Giant Shuriken
-    //        Musket
-    //        GunChainsaw
     private static final String[] DEFAULT_ITEMS = new String[]{
             "Wooden Gun",
             "Wooden Bullet",

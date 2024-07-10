@@ -29,7 +29,7 @@ public class ItemRemover {
                         System.out.println("Removed " + item.getDisplayName() + " from " + player.getDisplayName() +
                                            "'s inventory");
                         player.addChatMessage((IChatComponent) new ChatComponentText(
-                                "Removed " + item.getDisplayName() + " from your inventory"));
+                                "§cRemoved " + item.getDisplayName() + " from your inventory"));
                     }
                 }
 
