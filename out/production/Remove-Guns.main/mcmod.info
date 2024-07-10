@@ -1,0 +1,16 @@
+[
+{
+  "modid": "removeguns",
+  "name": "Remove Guns",
+  "description": "Removes guns from CustomNpcs",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/mayankpatibandla",
+  "updateUrl": "",
+  "authorList": ["Mayank Patibandla"],
+  "credits": "Mayank Patibandla",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
